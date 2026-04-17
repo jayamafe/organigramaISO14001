@@ -1,38 +1,17 @@
 ```mermaid
-graph TD;
-    A[Dirección General]
-    B[SGA]
-    C[Jefatura de Operaciones]
-    D[Jefatura de Mantenimiento]
-    E[Jefatura de Calidad Seguridad e Higiene]
-    F[Compras y Almacén]
-    G[Administración y Recursos Humanos]
-
-    A --> B
-    A --> C
-    A --> D
-    A --> E
-    A --> F
-    A --> G
-
-    %% Level 3 roles can be added below like this:
-    C1[Rol 1]
-    C2[Rol 2]
-    D1[Rol 1]
-    D2[Rol 2]
-    E1[Rol 1]
-    E2[Rol 2]
-    F1[Rol 1]
-    G1[Rol 1]
-    G2[Rol 2]
-
-    C --> C1
-    C --> C2
-    D --> D1
-    D --> D2
-    E --> E1
-    E --> E2
-    F --> F1
-    G --> G1
-    G --> G2
+graph LR
+    A[Jefatura de Operaciones] --> B[Supervisión de Producción / Servicio]
+    A --> C[Operadores de caldera y vapor]
+    A --> D[Auxiliares operativos / limpieza técnica]
+    E[Jefatura de Mantenimiento] --> F[Técnico electromecánico]
+    E --> G[Técnico de calderas y quemadores]
+    E --> H[Auxiliar de mantenimiento]
+    I[Jefatura de Calidad, Seguridad e Higiene] --> J[Control documental]
+    I --> K[Monitoreo de cumplimiento]
+    I --> L[Atención a emergencias / auditorías]
+    M[Compras y Almacén] --> N[Compras de insumos]
+    M --> O[Control de refacciones y químicos]
+    P[Administración y Recursos Humanos] --> Q[Capacitación]
+    P --> R[Expedientes]
+    P --> S[Comunicación interna]
 ```
