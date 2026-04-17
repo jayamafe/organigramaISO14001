@@ -1,17 +1,30 @@
 ```mermaid
-graph LR
-    A[Jefatura de Operaciones] --> B[Supervisión de Producción / Servicio]
-    A --> C[Operadores de caldera y vapor]
-    A --> D[Auxiliares operativos / limpieza técnica]
-    E[Jefatura de Mantenimiento] --> F[Técnico electromecánico]
-    E --> G[Técnico de calderas y quemadores]
-    E --> H[Auxiliar de mantenimiento]
-    I[Jefatura de Calidad, Seguridad e Higiene] --> J[Control documental]
-    I --> K[Monitoreo de cumplimiento]
-    I --> L[Atención a emergencias / auditorías]
-    M[Compras y Almacén] --> N[Compras de insumos]
-    M --> O[Control de refacciones y químicos]
-    P[Administración y Recursos Humanos] --> Q[Capacitación]
-    P --> R[Expedientes]
-    P --> S[Comunicación interna]
+graph TD
+    DG[Dirección General]
+    
+    DG --> SGA[Responsable del Sistema de Gestión Ambiental SGA]
+    DG --> JefaturaOps[Jefatura de Operaciones]
+    DG --> JefaturaMto[Jefatura de Mantenimiento]
+    DG --> JefaturaCalidad[Jefatura de Calidad, Seguridad e Higiene]
+    DG --> ComprasAlmacen[Compras y Almacén]
+    DG --> AdminRRHH[Administración y Recursos Humanos]
+
+    JefaturaOps --> Supervisión[Supervisión de Producción / Servicio]
+    JefaturaOps --> Operadores[Operadores de caldera y vapor]
+    JefaturaOps --> Auxiliares[Auxiliares operativos / limpieza técnica]
+
+    JefaturaMto --> TecnicoEM[Técnico electromecánico]
+    JefaturaMto --> TecnicoCal[Técnico de calderas y quemadores]
+    JefaturaMto --> AuxMto[Auxiliar de mantenimiento]
+
+    JefaturaCalidad --> ControlDoc[Control documental]
+    JefaturaCalidad --> Monitoreo[Monitoreo de cumplimiento]
+    JefaturaCalidad --> AtencionEmergencias[Atención a emergencias / auditorías]
+
+    ComprasAlmacen --> ComprasIns[Compras de insumos]
+    ComprasAlmacen --> ControlRef[Control de refacciones y químicos]
+
+    AdminRRHH --> Capacitacion[Capacitación]
+    AdminRRHH --> Expedientes[Expedientes]
+    AdminRRHH --> ComInt[Comunicación interna]
 ```
